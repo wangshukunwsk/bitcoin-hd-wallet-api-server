@@ -1,5 +1,4 @@
 import * as wallet from './service/wallet';
-import { createHDRootNodeFromSeed } from './service/hdwallet-node';
 
 
 async function genSegwitAddress(ctx:any){
