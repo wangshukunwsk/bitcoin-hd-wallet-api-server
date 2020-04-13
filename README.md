@@ -25,19 +25,19 @@ Note: I have setup a live demo server, you can try with it: https://39.98.193.12
 # Documentation
 
 - Generate HD SegWit bitcoin address
-    HTTP Request
-    POST /api/gensegwitaddress
-    Parameters:
-    + seed:string, hex string to generate master key of HD wallet
-    + path:string, the path of child node in HD wallet, the formate follw the stand of bip32
+    - HTTP Request
+    - POST /api/gensegwitaddress
+    -Parameters:
+     + seed:string, hex string to generate master key of HD wallet
+     + path:string, the path of child node in HD wallet, the formate follw the stand of bip32
 
 
 - Generate Multisignature bitcoin address
-    HTTP Request
-    POST /api/genmultisigaddress
-    Parameters:
-    + pubkeys:string[], the public keys of all the participants
-    + m:number, the amount of signatures required to release the coins
+    - HTTP Request
+    - POST /api/genmultisigaddress
+    - Parameters:
+     + pubkeys:string[], the public keys of all the participants
+     + m:number, the amount of signatures required to release the coins
 
 # References
 - https://github.com/bitcoinjs/bitcoinjs-lib/
