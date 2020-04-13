@@ -10,7 +10,7 @@ API server for bitcoin Hierarchical Deterministic wallet. It support below featu
 3.	run "npm start"
 4.	The local https server will be started
 
-# Call api with curl
+# Call API Server with curl
 - Generate a Hierarchical Deterministic (HD) Segregated Witness (SegWit) bitcoin address from a given seed and path
 
     curl https://localhost/api/gensegwitaddress -k -H "Content-Type:application/json" -X POST --data '{"seed": "f4f0cda65a9068e308fad4c96e8fe22213dd535fe7a7e91ca70c162a38a49aaacfe0dde5fafbbdf63cf783c2619db7174bc25cbfff574fb7037b1b9cec3d09b6","path":"m/84/0/0/0/6"}'
