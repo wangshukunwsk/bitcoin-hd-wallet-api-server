@@ -24,15 +24,15 @@ Note: I have setup a live demo server, you can try with it: https://39.98.193.12
 
 # Documentation
 
-- Generate HD SegWit bitcoin address
+### Generate HD SegWit bitcoin address
     - HTTP Request
     - POST /api/gensegwitaddress
-    -Parameters:
+    - Parameters:
      + seed:string, hex string to generate master key of HD wallet
      + path:string, the path of child node in HD wallet, the formate follw the stand of bip32
 
 
-- Generate Multisignature bitcoin address
+### Generate Multisignature bitcoin address
     - HTTP Request
     - POST /api/genmultisigaddress
     - Parameters:
