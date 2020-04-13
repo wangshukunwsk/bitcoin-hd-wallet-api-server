@@ -14,6 +14,10 @@ app.use(json());
 
 app.use(_router.routes(),_router.allowedMethods());
  
+app.on("error",(err:any,ctx:any)=>{
+  console.log(new Date(),":",err);
+});
+
 var sslOptions = {
   key: fs.readFileSync(path.resolve(__dirname,'../ssl/key.pem')),
   cert: fs.readFileSync(path.resolve(__dirname,'../ssl/cert.pem'))
