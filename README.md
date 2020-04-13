@@ -33,7 +33,7 @@ Note: I have setup a live demo server, you can try with it: https://39.98.193.12
 
 
 ### Generate Multisignature bitcoin address
-    - HTTP Request
+    HTTP Request
     - POST /api/genmultisigaddress
     - Parameters:
      + pubkeys:string[], the public keys of all the participants
