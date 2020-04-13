@@ -40,10 +40,10 @@ Note: I have setup a live demo server, you can try with it: https://39.98.193.12
     + m:number, the amount of signatures required to release the coins
 
 # References
-https://github.com/bitcoinjs/bitcoinjs-lib/
-http://bip32.org/
-https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
-http://bitcoinmagazine.com/8396/deterministic-wallets-advantages-flaw/
+- https://github.com/bitcoinjs/bitcoinjs-lib/
+- http://bip32.org/
+- https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
+- http://bitcoinmagazine.com/8396/deterministic-wallets-advantages-flaw/
 
 # License
 MIT
