@@ -1,5 +1,4 @@
 import * as wallet from './service/wallet';
-import { pathToFileURL } from 'url';
 import { createHDRootNodeFromSeed } from './service/hdwallet-node';
 
 
