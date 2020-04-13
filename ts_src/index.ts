@@ -7,6 +7,17 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
+app.use(async (ctx:any,next:any) => {
+  try{
+      await next()
+  }catch(err){
+      ctx.response.status = err.statusCode || err.status || 500;
+      ctx.response.body = {
+          message: err.message
+      };
+  }
+});
+
 app.use(bodyParser({
     enableTypes:['json', 'form', 'text']
   }));
