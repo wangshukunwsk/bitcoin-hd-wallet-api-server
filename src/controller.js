@@ -10,6 +10,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const wallet = require("./service/wallet");
+/**
+ * generate segwit address
+ * @param ctx Parameters passed by json in request body: {seed:string,path:string}, seed is hex string
+ */
 function genSegwitAddress(ctx) {
     return __awaiter(this, void 0, void 0, function* () {
         let reqData = ctx.request.body;
@@ -20,6 +24,23 @@ function genSegwitAddress(ctx) {
     });
 }
 exports.genSegwitAddress = genSegwitAddress;
+/**
+ * generate legacy p2pkh address
+ * @param ctx Parameters passed by json in request body: {seed:string,path:string}, seed is hex string
+ */
+function genP2PKHAddress(ctx) {
+    return __awaiter(this, void 0, void 0, function* () {
+        let reqData = ctx.request.body;
+        let address = wallet.generateP2PKHAddress(reqData.seed, reqData.path);
+        ctx.body = {
+            address
+        };
+    });
+}
+/**
+ * generate multi signature address
+ * @param ctx Parameters passed by json in request body: {pubkeys:string[],m:number}
+ */
 function genMultiSigAddress(ctx) {
     return __awaiter(this, void 0, void 0, function* () {
         let reqData = ctx.request.body;

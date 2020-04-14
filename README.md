@@ -42,6 +42,8 @@ Note: I have setup a live demo server, you can try with it: https://39.98.193.12
 # References
 - https://github.com/bitcoinjs/bitcoinjs-lib/
 - http://bip32.org/
+- https://bip49.com/
+- https://coinb.in/
 - https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
 - http://bitcoinmagazine.com/8396/deterministic-wallets-advantages-flaw/
 
