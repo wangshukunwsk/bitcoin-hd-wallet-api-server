@@ -34,7 +34,15 @@ Note: I have setup a live demo server, you can try with it: https://39.98.193.12
     Parameters:
       seed:string, hex string to generate master key of HD wallet
       path:string, the path of child node in HD wallet, the formate follw the stand of bip32
+    response: {address:string}
 
+### Generate HD Legacy bitcoin address
+    HTTP Request
+    POST /api/genP2PKHaddress
+    Parameters:
+      seed:string, hex string to generate master key of HD wallet
+      path:string, the path of child node in HD wallet, the formate follw the stand of bip32
+    response: {address:string}
 
 ### Generate Multisignature bitcoin address
     HTTP Request
@@ -42,6 +50,7 @@ Note: I have setup a live demo server, you can try with it: https://39.98.193.12
     Parameters:
       pubkeys:string[], the public keys of all the participants
       m:number, the amount of signatures required to release the coins
+    response: {address:string}
 
 # References
 - https://github.com/bitcoinjs/bitcoinjs-lib/
