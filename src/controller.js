@@ -37,6 +37,7 @@ function genP2PKHAddress(ctx) {
         };
     });
 }
+exports.genP2PKHAddress = genP2PKHAddress;
 /**
  * generate multi signature address
  * @param ctx Parameters passed by json in request body: {pubkeys:string[],m:number}

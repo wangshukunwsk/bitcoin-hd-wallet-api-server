@@ -40,5 +40,6 @@ async function genMultiSigAddress(ctx:any){
 
 export {
     genSegwitAddress,
+    genP2PKHAddress,
     genMultiSigAddress
 }
