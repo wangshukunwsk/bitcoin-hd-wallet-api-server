@@ -4,7 +4,6 @@ API server for bitcoin Hierarchical Deterministic wallet. It support below featu
 2. Generate a Hierarchical Deterministic (HD) Legacy (P2PKH) bitcoin address from a given seed and path
 3.  Generate an n-out-of-m Multisignature (multi-sig) Pay-To-Script-Hash (P2SH) bitcoin address, where n, m and addresses can be specified
 
-
 # Installation
 1.	download soucr code
 2.	run "npm install"
